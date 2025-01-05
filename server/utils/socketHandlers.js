@@ -44,7 +44,7 @@ async function handleJoinRoom(io, socket, { username, room }) {
       username: user.username,
       profilePhoto: user.profilePhoto.startsWith("http")
         ? user.profilePhoto
-        : `http://localhost:5000${user.profilePhoto}`,
+        : `https://chat-room-app-tnj8.onrender.com${user.profilePhoto}`,
       socketId: userSockets[user.username] || null,
     }));
 
@@ -55,7 +55,7 @@ async function handleJoinRoom(io, socket, { username, room }) {
       username: user.username,
       profilePhoto: user.profilePhoto.startsWith("http")
         ? user.profilePhoto
-        : `http://localhost:5000${user.profilePhoto}`,
+        : `https://chat-room-app-tnj8.onrender.com${user.profilePhoto}`,
       socketId: socket.id,
     });
 
