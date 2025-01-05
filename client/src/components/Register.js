@@ -29,7 +29,7 @@ const Register = () => {
     }
 
     try {
-      await axios.post("http://localhost:5000/api/auth/register", formData, {
+      await axios.post("https://chat-room-app-tnj8.onrender.com/api/auth/register", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
       toast.success("🎉 Registration Successful!", {
