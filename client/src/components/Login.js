@@ -22,7 +22,7 @@ const Login = () => {
 
     try {
       const { data } = await axios.post(
-        "http://localhost:5000/api/auth/login",
+        "https://chat-room-app-tnj8.onrender.com/api/auth/login",
         form
       );
       toast.success(`👋 Welcome to Chat Room ${form.room}`, {
