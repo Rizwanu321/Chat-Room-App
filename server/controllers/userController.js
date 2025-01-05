@@ -14,7 +14,7 @@ const userController = {
         profilePhoto: user.profilePhoto
           ? user.profilePhoto.startsWith("http")
             ? user.profilePhoto
-            : `http://localhost:5000${user.profilePhoto}`
+            : `https://chat-room-app-tnj8.onrender.com${user.profilePhoto}`
           : "/uploads/default-avatar.png",
         lastSeen: user.lastSeen,
       }));
@@ -38,7 +38,7 @@ const userController = {
         profilePhoto: user.profilePhoto
           ? user.profilePhoto.startsWith("http")
             ? user.profilePhoto
-            : `http://localhost:5000${user.profilePhoto}`
+            : `https://chat-room-app-tnj8.onrender.com${user.profilePhoto}`
           : "/uploads/default-avatar.png",
         email: user.email,
       });
@@ -58,7 +58,7 @@ const userController = {
       const profilePhoto = user.profilePhoto
         ? user.profilePhoto.startsWith("http")
           ? user.profilePhoto
-          : `http://localhost:5000${user.profilePhoto}`
+          : `https://chat-room-app-tnj8.onrender.com${user.profilePhoto}`
         : "/uploads/default-avatar.png";
 
       res.json({
